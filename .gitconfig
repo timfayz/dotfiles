@@ -1,0 +1,13 @@
+[user]
+	email = tim.fayzrakhmanov@gmail.com
+	name = Timur Fayzrakhmanov
+[push]
+	default = simple
+	followTags = true
+[core]
+	autocrlf = input
+[alias]
+	st = status
+	s = status
+	cm = commit
+	l = log --oneline --graph

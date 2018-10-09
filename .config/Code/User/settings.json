@@ -1,0 +1,53 @@
+{
+    "window.zoomLevel": 0,
+    "editor.wordWrap": "on",
+    "editor.fontSize": 16,
+    // https://github.com/Microsoft/vscode/issues/32579
+    "editor.tokenColorCustomizations": {
+        "textMateRules": [
+            {
+                // inspect TM scopes 
+                "scope": [
+                    "comment",
+                    "punctuation.definition.comment",
+                    "variable.language",
+                    "entity.other.attribute-name",
+                ],
+                "settings": {
+                    "fontStyle": ""
+                }
+            }
+        ]
+    },
+    "terminal.integrated.fontSize": 16,
+    "workbench.activityBar.visible": false,
+    "workbench.colorCustomizations": {
+        "terminal.background": "#181818",
+        "terminal.foreground": "#D8D8D8",
+        "terminalCursor.background": "#D8D8D8",
+        "terminalCursor.foreground": "#D8D8D8",
+        "terminal.ansiBlack": "#181818",
+        "terminal.ansiBlue": "#7CAFC2",
+        "terminal.ansiBrightBlack": "#585858",
+        "terminal.ansiBrightBlue": "#7CAFC2",
+        "terminal.ansiBrightCyan": "#86C1B9",
+        "terminal.ansiBrightGreen": "#A1B56C",
+        "terminal.ansiBrightMagenta": "#BA8BAF",
+        "terminal.ansiBrightRed": "#AB4642",
+        "terminal.ansiBrightWhite": "#F8F8F8",
+        "terminal.ansiBrightYellow": "#F7CA88",
+        "terminal.ansiCyan": "#86C1B9",
+        "terminal.ansiGreen": "#A1B56C",
+        "terminal.ansiMagenta": "#BA8BAF",
+        "terminal.ansiRed": "#AB4642",
+        "terminal.ansiWhite": "#D8D8D8",
+        "terminal.ansiYellow": "#F7CA88"
+    },
+    "window.menuBarVisibility": "toggle",
+    "editor.fontFamily": "'monospace', 'Droid Sans Mono', monospace, 'Droid Sans Fallback'",
+    "terminal.integrated.rendererType": "dom",
+    "workbench.colorTheme": "Visual Studio Dark",
+    "workbench.startupEditor": "newUntitledFile",
+    "editor.lineHeight": 0,
+    "terminal.integrated.showExitAlert": false,
+}
