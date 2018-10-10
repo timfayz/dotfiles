@@ -20,6 +20,16 @@ PS1+='\[\e[0m\]'
 PS1+='\n\$ '
 #PS1='%n@%m %3~%(!.#.$)%(?.. [%?]) '
 
+# Set default editor
+export EDITOR='nvim'
+export VISUAL=$EDITOR
+
+# Stop polluting .lesshst
+export LESSHISTFILE=/dev/null
+
+# Maximize CPU usage on `make`
+export MAKEFLAGS=-j8
+
 # Alias staff
 alias 1="sudo loadkeys us"
 alias 2="sudo loadkeys ru"
@@ -31,16 +41,6 @@ alias s='sudo -E'
 alias _refresh='source ~/.bashrc'
 alias _clip='xclip -selection clipboard'
 alias _iclip='xclip -selection clipboard -target image/png'
-
-# Set default editor
-export EDITOR='nvim'
-export VISUAL=$EDITOR
-
-# Stop polluting .lesshst
-export LESSHISTFILE=/dev/null
-
-# Maximize CPU usage on `make`
-export MAKEFLAGS=-j8
 
 bind "set completion-ignore-case on"
 # completion treat - and _ as equivalent
