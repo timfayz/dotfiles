@@ -29,5 +29,22 @@
     {
         "key": "ctrl+alt+,",
         "command": "workbench.action.terminal.focusPrevious"
-    }
+    },
+    // toggle relative line numbering
+    // {
+    //     "key": "ctrl+l",
+    //     "command": "settings.cycle",
+    //     "when": "editorTextFocus",
+    //     "args": {
+    //         "id": "relativeLineNumbers",
+    //         "values": [
+    //             {
+    //                 "editor.lineNumbers": "on"
+    //             },
+    //             {
+    //                 "editor.lineNumbers": "relative"
+    //             }
+    //         ]
+    //     }
+    // }
 ]

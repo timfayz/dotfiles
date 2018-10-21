@@ -6,14 +6,14 @@ filetype plugin on
 nnoremap <LEADER>ee :e<CR>
 
 " Write sudo
-cmap w!! w !sudo tee > /dev/null %
+cmap w!! :w !sudo tee > /dev/null %
 
 " Cursor
 " hightlight cursor
 set cursorline
 
-" Delete
-imap <C-D> <C-O>x
+" Delete/backspace
+inoremap <C-L> <C-O>x
 
 " Raw paste mode
 set paste "(off)
