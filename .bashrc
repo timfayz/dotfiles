@@ -13,7 +13,7 @@ PS1='\[\e[32m\u\]@\h '
 # working dir
 PS1+='\[\e[33m\w\]'
 # print code if != 0
-PS1+=' $(if [[ $? == 0 ]]; then echo ""; else echo \[\e[31m\][$?]; fi)'
+PS1+='$(res="$?"; if [[ $res != 0 ]]; then echo \[\e[31m\] [$res]; fi)'
 # reset coloring
 PS1+='\[\e[0m\]'
 # new line with typefield
@@ -77,7 +77,7 @@ shopt -s cdspell
 alias -- -='cd -'
 
 # Base16 color scheme
-source /home/timfayz/.timfayz/base16-shell/scripts/base16-default-dark.sh
+source $HOME/.config/base16-shell/scripts/base16-default-dark.sh
 
 # Bash completion
 #[[ $PS1 && -f /usr/share/bash-completion/bash_completion ]] && \

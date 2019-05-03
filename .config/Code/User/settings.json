@@ -1,26 +1,79 @@
 {
+    // Basics
     "window.zoomLevel": 0,
-    "editor.wordWrap": "on",
-    // https://github.com/Microsoft/vscode/issues/32579
-    "editor.tokenColorCustomizations": {
-        "textMateRules": [
-            {
-                // inspect TM scopes 
-                "scope": [
-                    "comment",
-                    "punctuation.definition.comment",
-                    "variable.language",
-                    "entity.other.attribute-name",
-                ],
-                "settings": {
-                    "fontStyle": ""
-                }
-            }
-        ]
-    },
-    "terminal.integrated.fontSize": 13,
+    "window.menuBarVisibility": "toggle",
     "workbench.activityBar.visible": false,
+    "workbench.startupEditor": "none",
+    "workbench.sideBar.location": "left",
+    "workbench.settings.openDefaultSettings": false,
+    "workbench.settings.openDefaultKeybindings": false,
+    "explorer.confirmDragAndDrop": false,
+    "explorer.confirmDelete": false,
+    "telemetry.enableTelemetry": false,
+    "telemetry.enableCrashReporter": false,
+
+    // Editor
+    "editor.fontFamily": "'SF Mono','monospace', 'Droid Sans Mono', monospace, 'Droid Sans Fallback'",
+    "editor.smoothScrolling": false,
+    "editor.wordWrap": "on",
+    "editor.wordWrapColumn": 80,
+    "editor.wrappingIndent": "same",
+    "editor.tabSize": 4,
+    "editor.rulers": [
+        80
+    ],
+    "editor.multiCursorModifier": "ctrlCmd",
+
+    // Terminal
+    "terminal.integrated.fontSize": 14,
+    "terminal.integrated.rendererType": "dom",
+    "terminal.integrated.showExitAlert": false,
+
+    // Markdown
+    "markdown.preview.scrollPreviewWithEditor": true,
+    "markdown.preview.scrollEditorWithPreview": true,
+
+    // Debug
+    "debug.internalConsoleOptions": "openOnSessionStart",
+    "debug.toolBarLocation": "docked",
+    
+    // Python
+    "python.formatting.provider": "black",
+    "python.pythonPath": "python3",
+
+    // C/C++ 
+    "C_Cpp.formatting": "Disabled",
+
+    // Vim
+    "vim.overrideCopy": true, // def false
+    "vim.useCtrlKeys": true,
+    "vim.hlsearch": true,
+    "vim.leader": "<space>",
+    "vim.handleKeys": {
+        "<C-a>": true,
+        "<C-b>": false,
+        "<C-f>": false,
+        // "<C-c>": false,
+        "<C-x>": false,
+    },
+    "vim.normalModeKeyBindingsNonRecursive": [
+        {
+        "before": ["<leader>", "a"],
+        "after": ["m", "l", "g", "g", "V", "G"]
+        },
+        {
+        "before": ["<leader>", "<leader>"],
+        "commands": [":w"]
+        },
+        {
+        "before": ["<C-n>"],
+        "commands": [":nohl"]
+        },
+    ],
+
+    // Terminal 
     "workbench.colorCustomizations": {
+        "editorRuler.foreground": "#363636",
         "terminal.background": "#181818",
         "terminal.foreground": "#D8D8D8",
         "terminalCursor.background": "#D8D8D8",
@@ -42,45 +95,212 @@
         "terminal.ansiWhite": "#D8D8D8",
         "terminal.ansiYellow": "#F7CA88"
     },
-    "window.menuBarVisibility": "toggle",
-    "editor.fontFamily": "'SF Mono','monospace', 'Droid Sans Mono', monospace, 'Droid Sans Fallback'",
-    "terminal.integrated.rendererType": "dom",
-    "workbench.startupEditor": "newUntitledFile",
-    "terminal.integrated.showExitAlert": false,
-    "debug.internalConsoleOptions": "openOnSessionStart",
-    "cSpell.language": "en",
-    "python.formatting.provider": "black",
-    "python.pythonPath": "python3",
-    "workbench.sideBar.location": "left",
-    "debug.toolBarLocation": "docked",
-    "cSpell.userWords": [
-        "fayzrakhman",
-        "quatifiers"
+
+    // https://github.com/Microsoft/vscode/issues/32579
+    "editor.tokenColorCustomizations": {
+        "textMateRules": [
+            {
+                // inspect TM scopes 
+                "scope": [
+                    "comment",
+                    "punctuation.definition.comment",
+                    "variable.language",
+                    "entity.other.attribute-name",
+                ],
+                "settings": {
+                    "fontStyle": ""
+                }
+            }
+        ]
+    },
+    
+    // Workaround (Terminal)
+    "terminal.integrated.commandsToSkipShell": [
+        "editor.action.toggleTabFocusMode",
+        "workbench.action.debug.continue",
+        "workbench.action.debug.pause",
+        "workbench.action.debug.restart",
+        "workbench.action.debug.run",
+        "workbench.action.debug.start",
+        "workbench.action.debug.stepInto",
+        "workbench.action.debug.stepOut",
+        "workbench.action.debug.stepOver",
+        "workbench.action.debug.stop",
+        "workbench.action.firstEditorInGroup",
+        "workbench.action.focusActiveEditorGroup",
+        "workbench.action.focusEighthEditorGroup",
+        "workbench.action.focusFifthEditorGroup",
+        "workbench.action.focusFirstEditorGroup",
+        "workbench.action.focusFourthEditorGroup",
+        "workbench.action.focusLastEditorGroup",
+        "workbench.action.focusSecondEditorGroup",
+        "workbench.action.focusSeventhEditorGroup",
+        "workbench.action.focusSixthEditorGroup",
+        "workbench.action.focusThirdEditorGroup",
+        "workbench.action.lastEditorInGroup",
+        "workbench.action.navigateDown",
+        "workbench.action.navigateLeft",
+        "workbench.action.navigateRight",
+        "workbench.action.navigateUp",
+        "workbench.action.openNextRecentlyUsedEditorInGroup",
+        "workbench.action.openPreviousRecentlyUsedEditorInGroup",
+        //"workbench.action.quickOpen",
+        "workbench.action.quickOpenPreviousEditor",
+        "workbench.action.quickOpenView",
+        "workbench.action.showCommands",
+        "workbench.action.tasks.build",
+        "workbench.action.tasks.restartTask",
+        "workbench.action.tasks.runTask",
+        "workbench.action.tasks.showLog",
+        "workbench.action.tasks.showTasks",
+        "workbench.action.tasks.terminate",
+        "workbench.action.tasks.test",
+        "workbench.action.terminal.clear",
+        "workbench.action.terminal.clearSelection",
+        "workbench.action.terminal.copySelection",
+        "workbench.action.terminal.deleteToLineStart",
+        "workbench.action.terminal.deleteWordLeft",
+        "workbench.action.terminal.deleteWordRight",
+        "workbench.action.terminal.findNextTerminalFocus",
+        "workbench.action.terminal.findPreviousTerminalFocus",
+        "workbench.action.terminal.focus",
+        "workbench.action.terminal.focusAtIndex1",
+        "workbench.action.terminal.focusAtIndex2",
+        "workbench.action.terminal.focusAtIndex3",
+        "workbench.action.terminal.focusAtIndex4",
+        "workbench.action.terminal.focusAtIndex5",
+        "workbench.action.terminal.focusAtIndex6",
+        "workbench.action.terminal.focusAtIndex7",
+        "workbench.action.terminal.focusAtIndex8",
+        "workbench.action.terminal.focusAtIndex9",
+        "workbench.action.terminal.focusFindWidget",
+        "workbench.action.terminal.focusNext",
+        "workbench.action.terminal.focusNextPane",
+        "workbench.action.terminal.focusPrevious",
+        "workbench.action.terminal.focusPreviousPane",
+        "workbench.action.terminal.hideFindWidget",
+        "workbench.action.terminal.kill",
+        "workbench.action.terminal.moveToLineEnd",
+        "workbench.action.terminal.moveToLineStart",
+        "workbench.action.terminal.new",
+        "workbench.action.terminal.newInActiveWorkspace",
+        "workbench.action.terminal.paste",
+        "workbench.action.terminal.resizePaneDown",
+        "workbench.action.terminal.resizePaneLeft",
+        "workbench.action.terminal.resizePaneRight",
+        "workbench.action.terminal.resizePaneUp",
+        "workbench.action.terminal.runActiveFile",
+        "workbench.action.terminal.runSelectedText",
+        "workbench.action.terminal.scrollDown",
+        "workbench.action.terminal.scrollDownPage",
+        "workbench.action.terminal.scrollToBottom",
+        "workbench.action.terminal.scrollToNextCommand",
+        "workbench.action.terminal.scrollToPreviousCommand",
+        "workbench.action.terminal.scrollToTop",
+        "workbench.action.terminal.scrollUp",
+        "workbench.action.terminal.scrollUpPage",
+        "workbench.action.terminal.selectAll",
+        "workbench.action.terminal.selectToNextCommand",
+        "workbench.action.terminal.selectToNextLine",
+        "workbench.action.terminal.selectToPreviousCommand",
+        "workbench.action.terminal.selectToPreviousLine",
+        "workbench.action.terminal.sendSequence",
+        "workbench.action.terminal.split",
+        "workbench.action.terminal.splitInActiveWorkspace",
+        "workbench.action.terminal.toggleFindCaseSensitiveTerminalFocus",
+        "workbench.action.terminal.toggleFindRegexTerminalFocus",
+        "workbench.action.terminal.toggleFindWholeWordTerminalFocus",
+        "workbench.action.terminal.toggleTerminal",
+        "workbench.action.toggleFullScreen",
+        "workbench.action.toggleMaximizedPanel",
+        "workbench.action.togglePanel"
     ],
-    // Vim
-    "vim.overrideCopy": true, // def false
-    "vim.useCtrlKeys": true,
-    "vim.hlsearch": true,
-    "vim.leader": "<space>",
-    "vim.handleKeys": {
-        "<C-a>": true,
-        "<C-b>": false,
-        "<C-f>": false,
-        // "<C-c>": false,
-        "<C-x>": false,
-    },
-    "vim.normalModeKeyBindingsNonRecursive": [
-    {
-      "before": ["<leader>", "a"],
-      "after": ["m", "l", "g", "g", "V", "G"]
-    },
-    {
-      "before": ["<leader>", "<leader>"],
-      "commands": [":w"]
-    },
-    {
-      "before": ["<C-n>"],
-      "commands": [":nohl"]
-    }
-],
+
+    // LaTeX
+    "latex-workshop.message.update.show": false,
+    "latex-workshop.view.pdf.viewer": "tab",
+
+    // Multicommand
+    "multiCommand.commands": [
+        {
+            "command": "multiCommand.commentAndDown",
+            "sequence": [
+                "editor.action.commentLine",
+                "cursorDown",
+            ]
+        },
+    ],
+
+    // Nomnoml
+    "markdown-nomnoml.style.defaultBackgroundColor": "#fff",
+
+    // cSpell
+    "cSpell.dictionaryDefinitions": [
+        { "name": "globalDictionary", "path": "/home/timfayz/.config/Code/User/dictionary.txt", }
+    ],
+    "cSpell.dictionaries": ["globalDictionary"],
+    // "cSpell.languageSettings": [
+    //     { "languageId": "*", "dictionaries": ["latexDictionary"] }
+    // ],
+    // "cSpell.ignoreRegExpList": [
+    //     "\\\\cite{[A-Za-z0-9, -]+}",
+    //     "\\\\begin{\\w+}",
+    //     "\\\\end{\\w+}",
+    //     "\\\\usepackage{\\w+}",
+    //     "\\\\bibliographystyle{\\w+}",
+    //     "\\\\hyphenation{[A-Za-z0-9, -]+}",
+    //     "\\w+{?",
+    // ],
+    "cSpell.userWords": [
+        "Backreference",
+        "Combinational",
+        "Denotational",
+        "Fayzrakhmanov",
+        "Hackable",
+        "Hardcoded",
+        "Hoare",
+        "Innopolis",
+        "Intensionality",
+        "LLVM",
+        "Metamath",
+        "Niklaus",
+        "Quora",
+        "Sergey",
+        "Shilov",
+        "Structs",
+        "Theming",
+        "Webassembly",
+        "Wirth",
+        "backend",
+        "backends",
+        "bjarne",
+        "bootloader",
+        "bootloaders",
+        "bootstrapable",
+        "bytecode",
+        "compositionality",
+        "conlang",
+        "dymanic",
+        "envisioneers",
+        "extensionality",
+        "formalisms",
+        "implementers",
+        "indeterminants",
+        "kickstarter",
+        "noam",
+        "overchoice",
+        "splitted",
+        "stroustrup",
+        "syscalls",
+        "toolchain",
+        "trilemma",
+        "uint",
+        "understandability",
+        "verificate"
+    ],
+    "cSpell.language": "en",
+    "window.titleBarStyle": "native",
+    "breadcrumbs.enabled": false,
+    "update.channel": "none",
+    
 }
