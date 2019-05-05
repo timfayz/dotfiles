@@ -4,7 +4,7 @@
 [[ $- != *i* ]] && return
 
 
-export PATH=$PATH:~/.local/bin:~/Code/bin/nim/bin:~/Code/bin/dart-sass
+export PATH=$PATH:~/.local/bin
 #lsflags=""
 
 # Prompt
