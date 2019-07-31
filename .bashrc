@@ -4,7 +4,7 @@
 [[ $- != *i* ]] && return
 
 
-export PATH=$PATH:~/.local/bin
+export PATH=$PATH:~/.local/bin:/usr/local/texlive/2019/bin/x86_64-linux:/home/timfayz/Downloads/Apps/metamath
 #lsflags=""
 
 # Prompt
@@ -24,11 +24,19 @@ PS1+='\n\$ '
 export EDITOR='nvim'
 export VISUAL=$EDITOR
 
+# Set LaTeX TEX Home
+if [ -d ~/.texmf ] ; then
+	export TEXMFHOME=~/.texmf
+fi
+
 # Stop polluting .lesshst
 export LESSHISTFILE=/dev/null
 
 # Maximize CPU usage on `make`
 export MAKEFLAGS=-j8
+
+# Qt
+QT_QPA_PLATFORMTHEME="qt5ct"
 
 # Alias staff
 alias 1="sudo loadkeys us"
@@ -41,6 +49,7 @@ alias s='sudo -E'
 alias _refresh='source ~/.bashrc'
 alias _clip='xclip -selection clipboard'
 alias _iclip='xclip -selection clipboard -target image/png'
+alias gdb='gdb -q'
 
 bind "set completion-ignore-case on"
 # completion treat - and _ as equivalent
