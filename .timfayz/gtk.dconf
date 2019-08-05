@@ -1,0 +1,11 @@
+[settings/file-chooser]
+sort-column='name'
+sidebar-width=153
+window-position=(291, 79)
+show-size-column=true
+show-hidden=false
+window-size=(1017, 742)
+sort-directories-first=true
+date-format='regular'
+sort-order='ascending'
+location-mode='path-bar'

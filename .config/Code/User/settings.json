@@ -2,7 +2,7 @@
     // Basics
     "window.titleBarStyle": "native",
     "window.zoomLevel": 0,
-    "window.menuBarVisibility": "toggle",
+    "window.menuBarVisibility": "hidden",
     "workbench.activityBar.visible": false,
     "workbench.startupEditor": "none",
     "workbench.sideBar.location": "left",
@@ -19,9 +19,12 @@
     "telemetry.enableCrashReporter": false,
 
     // Editor
+    // "editor.scrollbar.horizontal": "hidden",
+    // "editor.scrollbar.vertical": "hidden",
+    "editor.hideCursorInOverviewRuler": true,
     "editor.lineHeight": 0,
     "editor.fontSize": 16,
-    "editor.minimap.enabled": false,
+    "editor.minimap.enabled": true,
     "editor.suggestSelection": "first",
     "editor.fontFamily": "'SF Mono','monospace', 'Droid Sans Mono', monospace, 'Droid Sans Fallback'",
     "editor.smoothScrolling": false,
@@ -81,11 +84,19 @@
         "before": ["<C-n>"],
         "commands": [":nohl"]
         },
+        // {
+        // "before": ["j"],
+        // "after": ["g", "j"]
+        // },
+        // {
+        // "before": ["k"],
+        // "after": ["g", "k"]
+        // }
     ],
 
     // Terminal 
     "workbench.colorCustomizations": {
-        "editorRuler.foreground": "#363636",
+        // "editorRuler.foreground": "#363636",
         "terminal.background": "#181818",
         "terminal.foreground": "#D8D8D8",
         "terminalCursor.background": "#D8D8D8",
@@ -164,6 +175,7 @@
         "Combinatorics",
         "Denotational",
         "Endofunctor",
+        "Equiponent",
         "Ethnomathematics",
         "Fayzrakhmanov",
         "Georg",
@@ -189,19 +201,23 @@
         "Wirth",
         "backend",
         "backends",
+        "bijective",
         "bjarne",
         "bootloader",
         "bootloaders",
         "bootstrapable",
         "bytecode",
+        "codomain",
         "compositionality",
         "conlang",
         "dymanic",
         "envisioneers",
+        "equinumerous",
         "extensionality",
         "formalisms",
         "implementers",
         "indeterminants",
+        "injective",
         "kickstarter",
         "mathematica",
         "monoid",
@@ -212,10 +228,12 @@
         "principia",
         "splitted",
         "stroustrup",
+        "surjective",
         "syscalls",
         "toolchain",
         "trilemma",
         "uint",
+        "undefinability",
         "understandability",
         "verificate"
     ],
@@ -247,5 +265,8 @@
             ],
             "env": {}
         },
-    ]
+    ],
+
+    // Others
+    "python.jediEnabled": false
 }

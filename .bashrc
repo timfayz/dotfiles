@@ -4,7 +4,9 @@
 [[ $- != *i* ]] && return
 
 
-export PATH=$PATH:~/.local/bin:/usr/local/texlive/2019/bin/x86_64-linux:/home/timfayz/Downloads/Apps/metamath
+export PATH=$PATH:/home/timfayz/Downloads/Apps/metamath
+export PATH=$PATH:~/.local/bin
+export PATH=$PATH:/usr/local/texlive/2019/bin/x86_64-linux
 #lsflags=""
 
 # Prompt

@@ -1,0 +1,184 @@
+[/]
+desktop-effects-unmaximize-transition='easeNone'
+extension-cache-updated=1538831123
+desktop-effects-on-dialogs=false
+desktop-effects-maximize-transition='easeInExpo'
+applet-cache-updated=1538126078
+desktop-effects-map-effect='traditional'
+command-history=['info', 'bash', 'gksudo terminal', 'terminal', 'Keyboard', '', 'playonlinux', 'telegram-desktop ', 'skypeforlinux ', 'code', 'firefox ', 'sudo sh', 'gksu bash', 'gksudo nemo', 'dconf-editor ', 'font-manager ', 'uget-gtk', 'r']
+hotcorner-layout=['expo:false:0', 'scale:false:0', 'scale:false:0', 'desktop:true:200']
+desktop-effects-close-effect='traditional'
+desktop-effects-unmaximize-time=100
+desklet-snap-interval=25
+desktop-effects-map-time=100
+enabled-desklets=@as []
+desktop-effects-minimize-effect='traditional'
+alttab-switcher-style='icons+preview'
+workspace-osd-duration=400
+desktop-effects=false
+prevent-focus-stealing=false
+panels-height=['1:25']
+enable-vfade=false
+next-applet-id=14
+panel-launchers=['DEPRECATED']
+desktop-effects-map-transition='easeOutQuad'
+desktop-effects-maximize-time=100
+desktop-effects-unmaximize-effect='none'
+panels-enabled=['1:0:bottom']
+desktop-effects-tile-transition='easeInQuad'
+panels-resizable=['1:false']
+desktop-effects-maximize-effect='none'
+desktop-effects-on-menus=false
+enabled-applets=['panel1:right:0:systray@cinnamon.org:0', 'panel1:left:0:menu@cinnamon.org:1', 'panel1:left:2:panel-launchers@cinnamon.org:3', 'panel1:left:3:window-list@cinnamon.org:4', 'panel1:right:1:keyboard@cinnamon.org:5', 'panel1:right:2:notifications@cinnamon.org:6', 'panel1:right:3:removable-drives@cinnamon.org:7', 'panel1:right:4:user@cinnamon.org:8', 'panel1:right:5:network@cinnamon.org:9', 'panel1:right:6:bluetooth@cinnamon.org:10', 'panel1:right:7:power@cinnamon.org:11', 'panel1:right:8:calendar@cinnamon.org:12', 'panel1:right:9:sound@cinnamon.org:13']
+desktop-effects-minimize-time=160
+alttab-switcher-delay=1
+desktop-effects-tile-effect='none'
+desktop-effects-close-transition='easeOutQuad'
+enabled-extensions=['!cinnamon-maximus@fmete']
+desktop-effects-minimize-transition='easeInQuad'
+panel-edit-mode=false
+workspace-expo-view-as-grid=true
+desktop-effects-close-time=120
+workspace-osd-x=50
+workspace-osd-y=50
+favorite-apps=['cinnamon-settings.desktop', 'mintinstall.desktop', 'org.gnome.Terminal.desktop', 'nemo.desktop']
+desktop-effects-tile-time=100
+panels-autohide=['1:intel']
+device-aliases=['/org/freedesktop/UPower/devices/battery_BAT0:=Battery']
+startup-animation=false
+
+[settings-daemon/plugins/power]
+sleep-inactive-ac-timeout=0
+sleep-display-battery=1800
+button-power='interactive'
+lid-close-battery-action='suspend'
+lid-close-ac-action='suspend'
+sleep-display-ac=900
+sleep-inactive-battery-timeout=1800
+
+[settings-daemon/plugins/xsettings]
+buttons-have-icons=false
+menus-have-icons=true
+
+[settings-daemon/peripherals/touchpad]
+motion-acceleration=5.3924302788844622
+custom-acceleration=true
+clickpad-click=2
+custom-threshold=true
+scrolling-method=1
+disable-while-typing=true
+motion-threshold=10
+touchpad-enabled=true
+
+[settings-daemon/peripherals/touchscreen]
+orientation-lock=true
+
+[settings-daemon/peripherals/keyboard]
+repeat-interval=uint32 30
+delay=uint32 500
+numlock-state='on'
+
+[settings-daemon/peripherals/mouse]
+drag-threshold=8
+motion-threshold=1
+double-click=382
+locate-pointer=false
+middle-button-enabled=false
+
+[muffin]
+tile-maximize=true
+resize-threshold=24
+tile-hud-threshold=25
+unredirect-fullscreen-windows=true
+workspace-cycle=true
+
+[desktop/interface]
+text-scaling-factor=1.0
+cursor-size=23
+first-day-of-week=1
+cursor-theme='DMZ-White'
+keyboard-layout-use-upper=true
+cursor-blink-time=1248
+icon-theme='Mint-Y'
+keyboard-layout-show-flags=true
+gtk-theme='Mint-Y-Dark'
+keyboard-layout-prefer-variant-names=true
+
+[desktop/keybindings/custom-keybindings/custom2]
+binding=['<Super>v']
+command='code'
+name='Run Vscode'
+
+[desktop/keybindings/custom-keybindings/custom1]
+binding=['<Super>k']
+command='killall firefox'
+name='Kill firefox'
+
+[desktop/keybindings/custom-keybindings/custom0]
+binding=['<Super>t', '<Primary><Super>Return']
+command='gnome-terminal -- tmux'
+name='Launch tmux'
+
+[desktop/keybindings/custom-keybindings/custom3]
+binding=['<Super>c']
+command='gnome-calculator'
+name='Calculator'
+
+[desktop/keybindings]
+custom-list=['custom0', 'custom1', 'custom2', 'custom3']
+
+[desktop/keybindings/media-keys]
+terminal=@as []
+www=['XF86WWW', '<Super>w']
+
+[desktop/keybindings/wm]
+move-to-workspace-right=['<Primary><Shift><Alt>Right']
+move-to-workspace-1=@as []
+maximize=['<Alt>F10']
+move-to-center=['<Alt>c', '<Alt>F11']
+move-to-workspace-left=['<Primary><Shift><Alt>Left']
+begin-move=['<Alt>F7']
+
+[desktop/media-handling]
+automount-open=false
+autorun-never=true
+
+[desktop/screensaver]
+layout-group=0
+
+[desktop/applications/terminal]
+exec='gnome-terminal'
+
+[desktop/thumbnail-cache]
+maximum-age=30
+
+[desktop/wm/preferences]
+min-window-opacity=30
+theme='Mint-Y-Dark'
+num-workspaces=4
+workspace-names=@as []
+
+[desktop/sound]
+event-sounds=false
+
+[desktop/background]
+picture-uri='file:///usr/share/backgrounds/linuxmint-tara/monika_pure_green_grass.jpg'
+primary-color='#000000000000'
+picture-options='zoom'
+
+[desktop/background/slideshow]
+image-source='xml:///usr/share/cinnamon-background-properties/linuxmint-tara.xml'
+delay=15
+
+[theme]
+theme-cache-updated=1538127492
+name='Mint-Y-Dark'
+
+[cinnamon-session]
+quit-time-delay=60
+
+[sounds]
+login-enabled=false
+logout-enabled=false
+notification-enabled=false
+switch-enabled=false
