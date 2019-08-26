@@ -2,7 +2,7 @@
     // Basics
     "window.titleBarStyle": "native",
     "window.zoomLevel": 0,
-    "window.menuBarVisibility": "hidden",
+    "window.menuBarVisibility": "toggle",
     "workbench.activityBar.visible": false,
     "workbench.startupEditor": "none",
     "workbench.sideBar.location": "left",
@@ -10,6 +10,7 @@
     "workbench.settings.openDefaultKeybindings": false,
     "explorer.confirmDragAndDrop": false,
     "explorer.confirmDelete": false,
+    "vsintellicode.python.completionsEnabled": true,
 
     // Other
     "breadcrumbs.enabled": false,
@@ -21,9 +22,10 @@
     // Editor
     // "editor.scrollbar.horizontal": "hidden",
     // "editor.scrollbar.vertical": "hidden",
+    // "editor.glyphMargin": false,
     "editor.hideCursorInOverviewRuler": true,
     "editor.lineHeight": 0,
-    "editor.fontSize": 16,
+    "editor.fontSize": 15,
     "editor.minimap.enabled": true,
     "editor.suggestSelection": "first",
     "editor.fontFamily": "'SF Mono','monospace', 'Droid Sans Mono', monospace, 'Droid Sans Fallback'",
@@ -37,9 +39,6 @@
     "editor.rulers": [
         80
     ],
-
-    // Terminal
-    "terminal.integrated.fontSize": 16,
     "terminal.integrated.rendererType": "dom",
     "terminal.integrated.showExitAlert": false,
 
@@ -81,7 +80,7 @@
         "commands": [":w"]
         },
         {
-        "before": ["<C-n>"],
+        "before": ["<C-l>"],
         "commands": [":nohl"]
         },
         // {
@@ -215,12 +214,15 @@
         "equinumerous",
         "extensionality",
         "formalisms",
+        "gmail",
         "implementers",
         "indeterminants",
         "injective",
         "kickstarter",
         "mathematica",
         "monoid",
+        "monstrolab",
+        "morphism",
         "neumann",
         "noam",
         "overchoice",
@@ -268,5 +270,6 @@
     ],
 
     // Others
-    "python.jediEnabled": false
+    "python.jediEnabled": false,
+    "terminal.integrated.fontSize": 15
 }
