@@ -10,15 +10,22 @@
         "command": "editor.action.addSelectionToNextFindMatch",
         "when": "editorFocus"
     },
-    // {
-    //     "key": "ctrl+n",
-    //     "command": "editor.action.addSelectionToNextFindMatch",
-    //     "when": "editorFocus"
-    // },
-    // {
-    //     "key": "ctrl+q",
-    //     "command": "selectAll",
-    // },
+    {
+        "key": "alt+l",
+        "command": "toggle",
+        "when": "editorTextFocus",
+        "args": {
+            "id": "minimap",
+            "value": [
+                {
+                    "editor.lineNumbers": "on"
+                },
+                {
+                    "editor.lineNumbers": "off"
+                }
+            ]
+        }
+    },
     { 
         "key": "ctrl+/",
         "command": "multiCommand.commentAndDown", 
@@ -29,10 +36,15 @@
         "command": "-editor.action.addSelectionToNextFindMatch",
         "when": "editorFocus"
     },
-    {
-        "key": "ctrl+k ctrl+p",
-        "command": "editor.action.moveSelectionToPreviousFindMatch"
-    },
+    // {
+    //     "key": "ctrl+n",
+    //     "command": "editor.action.addSelectionToNextFindMatch",
+    //     "when": "editorFocus"
+    // },
+    // {
+    //     "key": "ctrl+q",
+    //     "command": "selectAll",
+    // },
     // Panel and Windows
     {
         "key": "alt+m",
@@ -74,7 +86,7 @@
         "when": "!terminalFocus"
     },
     {
-        "key": "ctrl+shift+alt+pagedown",
+        "key": "shift+alt+down",
         "command": "editor.action.copyLinesDownAction",
         "when": "editorTextFocus && !editorReadonly"
     },
@@ -84,7 +96,7 @@
         "when": "editorTextFocus && !editorReadonly"
     },
     {
-        "key": "ctrl+shift+alt+pageup",
+        "key": "shift+alt+up",
         "command": "editor.action.copyLinesUpAction",
         "when": "editorTextFocus && !editorReadonly"
     },
@@ -97,21 +109,44 @@
         "key": "ctrl+k ctrl+l",
         "command": "workbench.action.togglePanelPosition"
     },
-    // Toggle relative line numbering
-    // {
-    //     "key": "ctrl+l",
-    //     "command": "settings.cycle",
-    //     "when": "editorTextFocus",
-    //     "args": {
-    //         "id": "relativeLineNumbers",
-    //         "values": [
-    //             {
-    //                 "editor.lineNumbers": "on"
-    //             },
-    //             {
-    //                 "editor.lineNumbers": "relative"
-    //             }
-    //         ]
-    //     }
-    // }
+    {
+        "key": "alt+z",
+        "command": "workbench.action.toggleSidebarVisibility"
+    },
+    {
+        "key": "ctrl+b",
+        "command": "-workbench.action.toggleSidebarVisibility"
+    },
+    {
+        "key": "alt+z",
+        "command": "-editor.action.toggleWordWrap"
+    },
+    {
+        "key": "ctrl+k ctrl+r",
+        "command": "python.execInTerminal"
+    },
+    {
+        "key": "ctrl+k ctrl+r",
+        "command": "java.debug.runJavaFile"
+    },
+    {
+        "key": "ctrl+k ctrl+space",
+        "command": "editor.debug.action.showDebugHover",
+        "when": "editorTextFocus && inDebugMode"
+    },
+    {
+        "key": "ctrl+k ctrl+i",
+        "command": "-editor.debug.action.showDebugHover",
+        "when": "editorTextFocus && inDebugMode"
+    },
+    {
+        "key": "ctrl+k ctrl+space",
+        "command": "editor.action.showHover",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "ctrl+k ctrl+i",
+        "command": "-editor.action.showHover",
+        "when": "editorTextFocus"
+    }
 ]

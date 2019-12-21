@@ -3,30 +3,28 @@
 # If not running interactively, don't do anything
 [[ $- != *i* ]] && return
 
-
-export PATH=$PATH:/home/timfayz/Downloads/Apps/metamath
+# Apps
 export PATH=$PATH:~/.local/bin
-export PATH=$PATH:/usr/local/texlive/2019/bin/x86_64-linux
-#lsflags=""
+export PATH=$PATH:~/Downloads/metamath
+export PATH=$PATH:~/Downloads/ghidra_9.0.4
 
-# Prompt
-# user and host
-PS1='\[\e[32m\u\]@\h '
-# working dir
-PS1+='\[\e[33m\w\]'
-# print code if != 0
-PS1+='$(res="$?"; if [[ $res != 0 ]]; then echo \[\e[31m\] [$res]; fi)'
-# reset coloring
-PS1+='\[\e[0m\]'
-# new line with typefield
-PS1+='\n\$ '
-#PS1='%n@%m %3~%(!.#.$)%(?.. [%?]) '
-
-# Set default editor
+# Default editor
 export EDITOR='nvim'
 export VISUAL=$EDITOR
 
-# Set LaTeX TEX Home
+# Java
+export JAVA_HOME=/usr/lib/jvm/default-java
+export MAVEN_HOME=/usr/share/maven
+export M2_HOME=$MAVEN_HOME
+export PATH=$PATH:$JAVA_HOME/bin:$MAVEN_HOME
+
+# Python
+eval "$(pyenv init -)"
+eval "$(pyenv virtualenv-init -)"
+export PATH=$PATH:/home/timfayz/.pyenv/bin
+
+# LaTeX
+export PATH=$PATH:/usr/local/texlive/2019/bin/x86_64-linux
 if [ -d ~/.texmf ] ; then
 	export TEXMFHOME=~/.texmf
 fi
@@ -40,6 +38,23 @@ export MAKEFLAGS=-j8
 # Qt
 QT_QPA_PLATFORMTHEME="qt5ct"
 
+# Default ls flags
+#lsflags=""
+
+# Prompt
+PS1=''
+# user and host
+# PS1='\[\e[32m\u\]@\h '
+# working dir
+PS1+='\[\e[33m\w\]'
+# print code if != 0
+PS1+='$(res="$?"; if [[ $res != 0 ]]; then echo \[\e[31m\] [$res]; fi)'
+# reset coloring
+PS1+='\[\e[0m\]'
+# new line with typefield
+PS1+='\n\$ '
+#PS1='%n@%m %3~%(!.#.$)%(?.. [%?]) '
+
 # Alias staff
 alias 1="sudo loadkeys us"
 alias 2="sudo loadkeys ru"
@@ -52,6 +67,7 @@ alias _refresh='source ~/.bashrc'
 alias _clip='xclip -selection clipboard'
 alias _iclip='xclip -selection clipboard -target image/png'
 alias gdb='gdb -q'
+alias briss='java -jar ~/Downloads/Apps/briss-0.9/briss-0.9.jar && disown'
 
 bind "set completion-ignore-case on"
 # completion treat - and _ as equivalent
