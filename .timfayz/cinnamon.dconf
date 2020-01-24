@@ -48,13 +48,14 @@ device-aliases=['/org/freedesktop/UPower/devices/battery_BAT0:=Battery']
 startup-animation=false
 
 [settings-daemon/plugins/power]
-sleep-inactive-ac-timeout=0
-sleep-display-battery=1800
-button-power='interactive'
-lid-close-battery-action='suspend'
+button-power='suspend'
+critical-battery-action='nothing'
+sleep-inactive-battery-timeout=900
 lid-close-ac-action='suspend'
+lid-close-battery-action='suspend'
+sleep-inactive-ac-timeout=0
 sleep-display-ac=900
-sleep-inactive-battery-timeout=1800
+sleep-display-battery=600
 
 [settings-daemon/plugins/xsettings]
 buttons-have-icons=false
@@ -83,7 +84,7 @@ drag-threshold=8
 motion-threshold=1
 double-click=382
 locate-pointer=false
-middle-button-enabled=false
+middle-button-enabled=true
 
 [muffin]
 tile-maximize=true
@@ -106,13 +107,18 @@ keyboard-layout-prefer-variant-names=true
 
 [desktop/keybindings/custom-keybindings/custom2]
 binding=['<Super>v']
-command='code'
+command='/usr/bin/code'
 name='Run Vscode'
 
 [desktop/keybindings/custom-keybindings/custom1]
 binding=['<Super>k']
 command='killall firefox'
 name='Kill firefox'
+
+[desktop/keybindings/custom-keybindings/custom4]
+binding=['<Super>s']
+command='/usr/bin/gnome-screenshot -i'
+name='Grab screen'
 
 [desktop/keybindings/custom-keybindings/custom0]
 binding=['<Super>t', '<Primary><Super>Return']
@@ -125,11 +131,13 @@ command='gnome-calculator'
 name='Calculator'
 
 [desktop/keybindings]
-custom-list=['custom0', 'custom1', 'custom2', 'custom3']
+custom-list=['custom0', 'custom1', 'custom2', 'custom3', 'custom4']
+show-desklets=@as []
 
 [desktop/keybindings/media-keys]
 terminal=@as []
 www=['XF86WWW', '<Super>w']
+shutdown=['<Primary><Alt>End', 'XF86PowerOff']
 
 [desktop/keybindings/wm]
 move-to-workspace-right=['<Primary><Shift><Alt>Right']
@@ -154,6 +162,7 @@ maximum-age=30
 
 [desktop/wm/preferences]
 min-window-opacity=30
+mouse-button-modifier='<Super>'
 theme='Mint-Y-Dark'
 num-workspaces=4
 workspace-names=@as []
@@ -162,7 +171,7 @@ workspace-names=@as []
 event-sounds=false
 
 [desktop/background]
-picture-uri='file:///usr/share/backgrounds/linuxmint-tara/monika_pure_green_grass.jpg'
+picture-uri='file:///usr/share/backgrounds/linuxmint-tara/rsmith_single_blade_of_grass.jpg'
 primary-color='#000000000000'
 picture-options='zoom'
 

@@ -126,10 +126,6 @@
         "command": "python.execInTerminal"
     },
     {
-        "key": "ctrl+k ctrl+r",
-        "command": "java.debug.runJavaFile"
-    },
-    {
         "key": "ctrl+k ctrl+space",
         "command": "editor.debug.action.showDebugHover",
         "when": "editorTextFocus && inDebugMode"

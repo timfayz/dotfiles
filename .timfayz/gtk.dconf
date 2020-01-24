@@ -1,10 +1,10 @@
 [settings/file-chooser]
 sort-column='name'
-sidebar-width=153
-window-position=(291, 79)
+sidebar-width=461
+window-position=(292, 52)
 show-size-column=true
 show-hidden=false
-window-size=(1017, 742)
+window-size=(1017, 743)
 sort-directories-first=true
 date-format='regular'
 sort-order='ascending'

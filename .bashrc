@@ -19,9 +19,9 @@ export M2_HOME=$MAVEN_HOME
 export PATH=$PATH:$JAVA_HOME/bin:$MAVEN_HOME
 
 # Python
+export PATH=$PATH:/home/timfayz/.pyenv/bin
 eval "$(pyenv init -)"
 eval "$(pyenv virtualenv-init -)"
-export PATH=$PATH:/home/timfayz/.pyenv/bin
 
 # LaTeX
 export PATH=$PATH:/usr/local/texlive/2019/bin/x86_64-linux
@@ -67,7 +67,7 @@ alias _refresh='source ~/.bashrc'
 alias _clip='xclip -selection clipboard'
 alias _iclip='xclip -selection clipboard -target image/png'
 alias gdb='gdb -q'
-alias briss='java -jar ~/Downloads/Apps/briss-0.9/briss-0.9.jar && disown'
+alias briss='java -jar ~/Downloads/briss-0.9/briss-0.9.jar && disown'
 
 bind "set completion-ignore-case on"
 # completion treat - and _ as equivalent

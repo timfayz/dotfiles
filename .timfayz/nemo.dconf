@@ -5,11 +5,11 @@ show-compact-view-icon-toolbar=true
 show-open-in-terminal-toolbar=false
 thumbnail-limit=uint64 1073741824
 default-folder-viewer='list-view'
-show-hidden-files=true
+show-hidden-files=false
 context-menus-show-all-actions=true
 show-computer-icon-toolbar=false
 disable-menu-warning=true
-show-location-entry=true
+show-location-entry=false
 show-reload-icon-toolbar=true
 
 [extensions/nemo-terminal]
@@ -29,7 +29,7 @@ volumes-visible=false
 [window-state]
 start-with-menu-bar=true
 start-with-sidebar=true
-geometry='943x675+319+90'
+geometry='1179x717+201+69'
 start-with-toolbar=true
 maximized=false
-sidebar-bookmark-breakpoint=4
+sidebar-bookmark-breakpoint=5

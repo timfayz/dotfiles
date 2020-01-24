@@ -216,6 +216,7 @@
         "Theming",
         "Webassembly",
         "Wirth",
+        "Zotero",
         "backend",
         "backends",
         "bijective",
@@ -228,6 +229,7 @@
         "codomain",
         "compositionality",
         "conlang",
+        "delinearization",
         "dics",
         "dymanic",
         "envisioneers",
@@ -240,6 +242,7 @@
         "indeterminants",
         "injective",
         "kickstarter",
+        "linearization",
         "mathematica",
         "monoid",
         "monospace",
@@ -250,6 +253,7 @@
         "overchoice",
         "ponens",
         "principia",
+        "smth",
         "splitted",
         "stroustrup",
         "surjective",
@@ -296,8 +300,6 @@
 
     // Others
     "python.jediEnabled": false,
-    "editor.lineHeight": 0,
-    "editor.fontSize": 14,
     // "editor.lineNumbers": "off",
     "debug.openExplorerOnEnd": true,
     "debug.showBreakpointsInOverviewRuler": true,
@@ -309,4 +311,6 @@
     "editor.codeLens": false,
     "java.errors.incompleteClasspath.severity": "ignore",
     "java.debug.settings.hotCodeReplace": "auto",
+    "editor.lineHeight": 0,
+    "editor.fontSize": 14,
 }

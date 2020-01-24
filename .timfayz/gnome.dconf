@@ -15,19 +15,23 @@ default-show-menubar=true
 [charmap/window-state]
 size=(900, 506)
 
+[baobab/ui]
+window-state=87168
+window-size=(960, 600)
+
 [calculator]
-target-currency=''
+target-currency='DZD'
 show-zeroes=false
-source-currency=''
+source-currency='DZD'
 show-thousands=false
 button-mode='programming'
-target-units='radian'
+target-units='meter'
 word-size=64
-window-position=(202, 159)
+window-position=(605, 108)
 number-format='automatic'
 angle-units='degrees'
 base=10
-source-units='degree'
+source-units='millimeter'
 accuracy=9
 
 [gnome-screenshot]
@@ -39,24 +43,26 @@ last-save-directory='file:///home/timfayz/Desktop'
 
 [evince]
 document-directory=@ms 'file:///home/timfayz/Desktop'
+pictures-directory=@ms 'file:///home/timfayz/Desktop'
+show-caret-navigation-message=false
 
 [evince/default]
-window-ratio=(3.4707158351409979, 1.4278523489932886)
+window-ratio=(2.6143790849673203, 1.0744949494949494)
 continuous=true
 fullscreen=false
 show-sidebar=false
 dual-page-odd-left=false
 inverted-colors=false
-zoom=2.1632703865585987
-sidebar-page='thumbnails'
-sidebar-size=313
+zoom=2.0329592616985392
+sidebar-page='bookmarks'
+sidebar-size=316
 dual-page=false
 sizing-mode='free'
 
 [file-roller/listing]
 sort-method='name'
-name-column-width=250
-sort-type='ascending'
+name-column-width=539
+sort-type='descending'
 list-mode='as-folder'
 show-path=false
 
@@ -71,8 +77,8 @@ recreate-folders=true
 
 [file-roller/ui]
 sidebar-width=200
-window-height=480
-window-width=600
+window-height=851
+window-width=1600
 
 [calendar]
 window-position=(0, 0)
@@ -129,6 +135,13 @@ load-extra-items=false
 last-vertical-content-pane-position=150
 last-horizontal-content-pane-position=399
 
+[nm-applet]
+disable-disconnected-notifications=true
+
+[nm-applet/eap/53e3cc1c-13a8-4e28-9c79-2481392f5a48]
+ignore-phase2-ca-cert=false
+ignore-ca-cert=false
+
 [nm-applet/eap/8ce96036-1a1b-4bf8-84bb-591e671f58e9]
 ignore-phase2-ca-cert=false
 ignore-ca-cert=false
@@ -150,6 +163,10 @@ ignore-phase2-ca-cert=false
 ignore-ca-cert=false
 
 [nm-applet/eap/6b3c874e-726d-4ecd-80e6-c6670c89de1d]
+ignore-phase2-ca-cert=false
+ignore-ca-cert=false
+
+[nm-applet/eap/119934b7-e6bd-48a2-a9da-0abf4880cf11]
 ignore-phase2-ca-cert=false
 ignore-ca-cert=false
 
@@ -208,6 +225,7 @@ layout-path='%aa/%at'
 media-type='audio/x-vorbis'
 
 [rhythmbox/library/source]
+sorting=('Track', true)
 show-browser=false
 
 [rhythmbox/sources]
