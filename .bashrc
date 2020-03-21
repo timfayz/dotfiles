@@ -19,6 +19,7 @@ export M2_HOME=$MAVEN_HOME
 export PATH=$PATH:$JAVA_HOME/bin:$MAVEN_HOME
 
 # Python
+export NLTK_DATA=~/.nltk_data
 export PATH=$PATH:/home/timfayz/.pyenv/bin
 eval "$(pyenv init -)"
 eval "$(pyenv virtualenv-init -)"

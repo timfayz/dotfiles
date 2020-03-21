@@ -126,23 +126,18 @@
         "command": "python.execInTerminal"
     },
     {
-        "key": "ctrl+k ctrl+space",
-        "command": "editor.debug.action.showDebugHover",
-        "when": "editorTextFocus && inDebugMode"
+        "key": "ctrl+0",
+        "command": "-fontshortcuts.resetEditorFontSize",
+        "when": "editorFocus"
     },
     {
-        "key": "ctrl+k ctrl+i",
-        "command": "-editor.debug.action.showDebugHover",
-        "when": "editorTextFocus && inDebugMode"
+        "key": "ctrl+k ctrl+enter",
+        "command": "python.datascience.runcurrentcell",
+        "when": "editorTextFocus && python.datascience.featureenabled && python.datascience.hascodecells && !editorHasSelection"
     },
     {
-        "key": "ctrl+k ctrl+space",
-        "command": "editor.action.showHover",
-        "when": "editorTextFocus"
-    },
-    {
-        "key": "ctrl+k ctrl+i",
-        "command": "-editor.action.showHover",
-        "when": "editorTextFocus"
+        "key": "ctrl+enter",
+        "command": "-python.datascience.runcurrentcell",
+        "when": "editorTextFocus && python.datascience.featureenabled && python.datascience.hascodecells && !editorHasSelection"
     }
 ]
