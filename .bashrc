@@ -3,10 +3,9 @@
 # If not running interactively, don't do anything
 [[ $- != *i* ]] && return
 
+
 # Apps
 export PATH=$PATH:~/.local/bin
-export PATH=$PATH:~/Downloads/metamath
-export PATH=$PATH:~/Downloads/ghidra_9.0.4
 
 # Default editor
 export EDITOR='nvim'
@@ -25,7 +24,9 @@ eval "$(pyenv init -)"
 eval "$(pyenv virtualenv-init -)"
 
 # LaTeX
-export PATH=$PATH:/usr/local/texlive/2019/bin/x86_64-linux
+export PATH=$PATH:/usr/local/texlive/2020/bin/x86_64-linux
+export MANPATH=$MANPATH:/usr/local/texlive/2020/texmf-dist/doc/man
+export INFOPATH=$INFOPATH:/usr/local/texlive/2020/texmf-dist/doc/info
 if [ -d ~/.texmf ] ; then
 	export TEXMFHOME=~/.texmf
 fi
@@ -110,3 +111,5 @@ source $HOME/.config/base16-shell/scripts/base16-default-dark.sh
 # Bash completion
 #[[ $PS1 && -f /usr/share/bash-completion/bash_completion ]] && \
 #. /usr/share/bash-completion/bash_completion
+
+export LC_COLLATE=C

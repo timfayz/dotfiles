@@ -18,14 +18,28 @@
             "id": "minimap",
             "value": [
                 {
-                    "editor.lineNumbers": "on"
+                    "editor.lineNumbers": "on",
+                    "editor.folding": true,
+                    "editor.glyphMargin": true,
                 },
                 {
-                    "editor.lineNumbers": "off"
+                    "editor.lineNumbers": "off",
+                    "editor.folding": false,
+                    "editor.glyphMargin": false,
                 }
             ]
         }
     },
+    // {
+    //     "key": "ctrl+tab",
+    //     "command": "workbench.action.quickOpenNavigateNext",
+    //     "when": "!inEditorsPicker"
+    // },
+    // {
+    //     "key": "ctrl+shift+tab",
+    //     "command": "workbench.action.quickOpenNavigatePrevious",
+    //     "when": "!inEditorsPicker"
+    // },
     { 
         "key": "ctrl+/",
         "command": "multiCommand.commentAndDown", 

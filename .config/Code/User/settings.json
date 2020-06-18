@@ -196,18 +196,22 @@
         "Combinational",
         "Combinatorics",
         "DSLs",
+        "Dautov",
         "Denotational",
         "Deutsch",
         "Endofunctor",
         "Equiponent",
         "Ethnomathematics",
+        "Executables",
         "Fayzrakhmanov",
+        "Gainutdinov",
         "Georg",
         "Goldbach",
         "Hackable",
         "Hardcoded",
         "Hoare",
         "Homotopy",
+        "Implementational",
         "Innopolis",
         "Intensionality",
         "LLVM",
@@ -215,6 +219,7 @@
         "Niklaus",
         "Peano",
         "Quora",
+        "Ramil",
         "Sergey",
         "Servlet",
         "Shilov",
@@ -226,10 +231,12 @@
         "Webassembly",
         "Wirth",
         "Zotero",
+        "azat",
         "backend",
         "backends",
         "bijective",
         "bjarne",
+        "blazingly",
         "bootloader",
         "bootloaders",
         "bootstrapable",
@@ -241,6 +248,8 @@
         "delinearization",
         "denumerator",
         "dics",
+        "dispatchable",
+        "distinguishability",
         "dymanic",
         "envisioneers",
         "equinumerous",
@@ -253,9 +262,12 @@
         "implementers",
         "indeterminants",
         "injective",
+        "internalism",
+        "keypress",
         "kickstarter",
         "linearization",
         "mathematica",
+        "minimalistic",
         "monoid",
         "monospace",
         "monstrolab",
@@ -265,7 +277,9 @@
         "overchoice",
         "ponens",
         "principia",
+        "redefinable",
         "smth",
+        "speciality",
         "splitted",
         "stroustrup",
         "surjective",
@@ -273,22 +287,28 @@
         "timfayz",
         "toolchain",
         "transpilation",
+        "transpiled",
         "transpiler",
+        "transpiling",
         "trilemma",
         "uint",
         "undefinability",
         "understandability",
+        "universalities",
         "vals",
         "verificate"
     ],
     
     // LaTeX Workshop
     "latex-workshop.message.update.show": false,
-    "latex-workshop.view.pdf.viewer": "tab",
+    "latex-workshop.view.pdf.viewer": "external",
     "latex-workshop.view.pdf.trim": 3,
+    "latex-workshop.latex.recipe.default": "lastUsed",
+    "latex-workshop.latex.autoBuild.run": "never",
+    "latex-workshop.latex.pdfWatch.delay": 700,
     "latex-workshop.latex.recipes": [
         {
-            "name": "latexmk lua 🔃",
+            "name": "my latexmk lua 🔃",
             "tools": [
                 "latexmk"
             ]
@@ -299,20 +319,28 @@
             "name": "latexmk",
             "command": "latexmk",
             "args": [
-                // "-c",
                 "-synctex=1",
                 "-interaction=nonstopmode",
                 "-file-line-error",
                 "-pdflua",
-                "-outdir=%OUTDIR%",
-                "%DOC%"
+                // "-outdir=%OUTDIR%",
+                "%DOC%.tex"
             ],
-            "env": {}
+            "env": { // ADHOC !!!
+                "PATH": "/home/timfayz/.pyenv/plugins/pyenv-virtualenv/shims:/home/timfayz/.pyenv/shims:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/home/timfayz/.local/bin:/home/timfayz/Downloads/metamath:/home/timfayz/Downloads/ghidra_9.0.4:/usr/lib/jvm/default-java/bin:/usr/share/maven:/home/timfayz/.pyenv/bin:/usr/local/texlive/2019/bin/x86_64-linux"
+            }
         },
+        {
+          "name": "bibtex",
+          "command": "bibtex",
+          "args": [
+            "%DOCFILE%"
+          ],
+          "env": {}
+        }
     ],
-
+    
     // Others
-    // "editor.lineNumbers": "off",
     "debug.openExplorerOnEnd": true,
     "debug.showBreakpointsInOverviewRuler": true,
     "debug.focusWindowOnBreak": false,
@@ -324,11 +352,15 @@
     "java.errors.incompleteClasspath.severity": "ignore",
     "java.debug.settings.hotCodeReplace": "auto",
     "workbench.list.openMode": "doubleClick",
-    "terminal.integrated.fontSize": 14,
-    "editor.fontSize": 15,
+    "editor.fontSize": 17,
     "editor.lineHeight": 0,
     "pythonPreview.code.fontSize": "14",
     "pythonPreview.fontSize": 15,
     "python.dataScience.askForKernelRestart": false,
     "editor.wordWrap": "on",
+    "editor.lineNumbers": "on",
+    "editor.folding": true,
+    "editor.glyphMargin": true,
+    "workbench.colorTheme": "Default Light+",
+    "terminal.integrated.fontSize": 14,
 }
