@@ -153,5 +153,9 @@
         "key": "ctrl+enter",
         "command": "-python.datascience.runcurrentcell",
         "when": "editorTextFocus && python.datascience.featureenabled && python.datascience.hascodecells && !editorHasSelection"
+    },
+    {
+        "key": "ctrl+shift+s",
+        "command": "workbench.action.files.saveAll"
     }
 ]

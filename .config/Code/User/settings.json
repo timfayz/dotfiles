@@ -67,7 +67,6 @@
     // Python
     "python.jediEnabled": false,
     "python.formatting.provider": "black",
-    "python.pythonPath": "/home/timfayz/.pyenv/versions/3.7.4/bin/python",
     "python.autoComplete.extraPaths": [
         "/home/timfayz/.pyenv/versions/3.7.4/lib/",
     ],
@@ -195,10 +194,12 @@
         "Backreference",
         "Combinational",
         "Combinatorics",
+        "Crypticity",
         "DSLs",
         "Dautov",
         "Denotational",
         "Deutsch",
+        "Embeddable",
         "Endofunctor",
         "Equiponent",
         "Ethnomathematics",
@@ -215,9 +216,11 @@
         "Innopolis",
         "Intensionality",
         "LLVM",
+        "Lani",
         "Metamath",
         "Niklaus",
         "Peano",
+        "Prospectiveness",
         "Quora",
         "Ramil",
         "Sergey",
@@ -226,6 +229,7 @@
         "Strogatz",
         "Structs",
         "Succedent",
+        "Survivance",
         "Tegmark",
         "Theming",
         "Webassembly",
@@ -234,6 +238,7 @@
         "azat",
         "backend",
         "backends",
+        "behaviour",
         "bijective",
         "bjarne",
         "blazingly",
@@ -243,6 +248,7 @@
         "bytecode",
         "changelogs",
         "codomain",
+        "composability",
         "compositionality",
         "conlang",
         "delinearization",
@@ -274,7 +280,9 @@
         "morphism",
         "neumann",
         "noam",
+        "nonoptimal",
         "overchoice",
+        "overjump",
         "ponens",
         "principia",
         "redefinable",
@@ -301,11 +309,11 @@
     
     // LaTeX Workshop
     "latex-workshop.message.update.show": false,
-    "latex-workshop.view.pdf.viewer": "external",
-    "latex-workshop.view.pdf.trim": 3,
+    "latex-workshop.view.pdf.trim": 1,
+    "latex-workshop.latex.pdfWatch.delay": 100,
+    "latex-workshop.view.pdf.viewer": "tab",
     "latex-workshop.latex.recipe.default": "lastUsed",
     "latex-workshop.latex.autoBuild.run": "never",
-    "latex-workshop.latex.pdfWatch.delay": 700,
     "latex-workshop.latex.recipes": [
         {
             "name": "my latexmk lua 🔃",
@@ -352,7 +360,7 @@
     "java.errors.incompleteClasspath.severity": "ignore",
     "java.debug.settings.hotCodeReplace": "auto",
     "workbench.list.openMode": "doubleClick",
-    "editor.fontSize": 17,
+    "editor.fontSize": 19,
     "editor.lineHeight": 0,
     "pythonPreview.code.fontSize": "14",
     "pythonPreview.fontSize": 15,
@@ -363,4 +371,12 @@
     "editor.glyphMargin": true,
     "workbench.colorTheme": "Default Light+",
     "terminal.integrated.fontSize": 14,
+    "workbench.editorAssociations": [
+        {
+            "viewType": "default",
+            "filenamePattern": "*.pdf"
+        }
+    ],
+    "python.languageServer": "Microsoft",
+    "python.defaultInterpreterPath": "/home/timfayz/.pyenv/versions/3.7.4/bin/python",
 }
