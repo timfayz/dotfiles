@@ -3,34 +3,42 @@
     "window.titleBarStyle": "native",
     "window.zoomLevel": 0,
     "window.menuBarVisibility": "toggle",
+    "workbench.colorTheme": "Default Light+",
     "workbench.activityBar.visible": false,
-    "workbench.startupEditor": "none",
+    "workbench.startupEditor": "newUntitledFile",
     "workbench.sideBar.location": "left",
     "workbench.settings.openDefaultSettings": false,
     "workbench.settings.openDefaultKeybindings": false,
+    "workbench.list.openMode": "doubleClick",
     "explorer.confirmDragAndDrop": false,
     "explorer.confirmDelete": false,
     "window.openFilesInNewWindow": "on", // !!!
-
-    // Completion
-    "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
-    "vsintellicode.python.completionsEnabled": true,
-
-    // Other
+    "workbench.editorAssociations": [
+        {
+            "viewType": "default",
+            "filenamePattern": "*.pdf"
+        }
+    ],
     "breadcrumbs.enabled": false,
     "update.mode": "none",
     "telemetry.enableTelemetry": false,
     "telemetry.enableCrashReporter": false,
-
+    
     // Editor
     // "editor.scrollbar.horizontal": "hidden",
     // "editor.scrollbar.vertical": "hidden",
-    // "editor.glyphMargin": false,
     // "explorer.autoReveal": true,
+    "editor.fontSize": 18,
+    "editor.lineHeight": 0,
+    "editor.wordWrap": "on",
+    "editor.lineNumbers": "on",
+    "editor.folding": true,
+    "editor.glyphMargin": true,
+    "editor.codeLens": false,
     "editor.hideCursorInOverviewRuler": true,
     "editor.minimap.enabled": false,
     "editor.suggestSelection": "first",
-    "editor.fontFamily": "'SF Mono','monospace', 'Droid Sans Mono', monospace, 'Droid Sans Fallback'",
+    "editor.fontFamily": "'SF Mono', 'Droid Sans Mono', monospace, 'Droid Sans Fallback'",
     "editor.smoothScrolling": false,
     "editor.parameterHints.enabled": false,
     "editor.wrappingIndent": "same",
@@ -41,7 +49,12 @@
         80
     ],
 
+    // Completion
+    "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+    "vsintellicode.python.completionsEnabled": true,
+
     // Terminal
+    "terminal.integrated.fontSize": 14,
     "terminal.integrated.rendererType": "dom",
     "terminal.integrated.showExitAlert": false,
     "terminal.integrated.commandsToSkipShell": [
@@ -49,113 +62,25 @@
         "workbench.action.toggleSidebarVisibility",
     ],
 
-    // Markdown
-    "markdown.preview.scrollPreviewWithEditor": true,
-    "markdown.preview.scrollEditorWithPreview": true,
+    // Debug
+    "debug.internalConsoleOptions": "neverOpen",
+    "debug.toolBarLocation": "docked",
+    "debug.openExplorerOnEnd": true,
+    "debug.showBreakpointsInOverviewRuler": true,
+    "debug.focusWindowOnBreak": false,
+    
+    // Hacks ////////////////////////////////////////////////////////
+
+    // Code Runner
+    "code-runner.clearPreviousOutput": true,
+
+    // Print Code
+    "printcode.fontSize": 10,
+    "printcode.browserPath": "/usr/bin/google-chrome-stable",
 
     // Open in Browser
     "open-in-browser.default": "chrome",
     
-    // Debug
-    "debug.internalConsoleOptions": "neverOpen",
-    "debug.toolBarLocation": "docked",
-    
-    // PrintCode
-    "printcode.fontSize": 10,
-    "printcode.browserPath": "/usr/bin/google-chrome-stable",
-
-    // Python
-    "python.jediEnabled": false,
-    "python.formatting.provider": "black",
-    "python.autoComplete.extraPaths": [
-        "/home/timfayz/.pyenv/versions/3.7.4/lib/",
-    ],
-
-    // C/C++ 
-    "C_Cpp.formatting": "Disabled",
-
-    // JAVA
-    "java.home": "/usr/lib/jvm/default-java",
-    
-    // Vim
-    // "vim.foldfix": true,
-    "vim.overrideCopy": true, // def false
-    "vim.useCtrlKeys": true,
-    "vim.hlsearch": true,
-    "vim.leader": "<space>",
-    "vim.handleKeys": {
-        "<C-a>": true,
-        "<C-b>": false,
-        "<C-f>": false,
-        // "<C-c>": false,
-        "<C-x>": false,
-    },
-    "vim.normalModeKeyBindingsNonRecursive": [
-        {
-        "before": ["<leader>", "a"],
-        "after": ["m", "l", "g", "g", "V", "G"]
-        },
-        {
-        "before": ["<leader>", "<leader>"],
-        "commands": [":w"]
-        },
-        {
-        "before": ["<C-l>"],
-        "commands": [":nohl"]
-        },
-        // {
-        // "before": ["j"],
-        // "after": ["g", "j"]
-        // },
-        // {
-        // "before": ["k"],
-        // "after": ["g", "k"]
-        // }
-    ],
-
-    // Terminal 
-    "workbench.colorCustomizations": {
-        // "editorRuler.foreground": "#363636",
-        "terminal.background": "#181818",
-        "terminal.foreground": "#D8D8D8",
-        "terminalCursor.background": "#D8D8D8",
-        "terminalCursor.foreground": "#D8D8D8",
-        "terminal.ansiBlack": "#181818",
-        "terminal.ansiBlue": "#7CAFC2",
-        "terminal.ansiBrightBlack": "#585858",
-        "terminal.ansiBrightBlue": "#7CAFC2",
-        "terminal.ansiBrightCyan": "#86C1B9",
-        "terminal.ansiBrightGreen": "#A1B56C",
-        "terminal.ansiBrightMagenta": "#BA8BAF",
-        "terminal.ansiBrightRed": "#AB4642",
-        "terminal.ansiBrightWhite": "#F8F8F8",
-        "terminal.ansiBrightYellow": "#F7CA88",
-        "terminal.ansiCyan": "#86C1B9",
-        "terminal.ansiGreen": "#A1B56C",
-        "terminal.ansiMagenta": "#BA8BAF",
-        "terminal.ansiRed": "#AB4642",
-        "terminal.ansiWhite": "#D8D8D8",
-        "terminal.ansiYellow": "#F7CA88"
-    },
-
-    // https://github.com/Microsoft/vscode/issues/32579
-    "editor.tokenColorCustomizations": {
-        "textMateRules": [
-            {
-                // inspect TM scopes 
-                "scope": [
-                    "comment",
-                    "punctuation.definition.comment",
-                    "variable.language",
-                    "entity.other.attribute-name",
-                ],
-                "settings": {
-                    "fontStyle": ""
-                }
-            }
-        ]
-    },
-
     // Multicommand
     "multiCommand.commands": [
         {
@@ -167,27 +92,43 @@
         },
     ],
 
-    // Nomnoml
-    "markdown-nomnoml.style.defaultBackgroundColor": "#fff",
+    // Languages ////////////////////////////////////////////////////
+
+    // Python
+    "python.formatting.provider": "black",
+    "python.autoComplete.extraPaths": [
+        "/home/timfayz/.pyenv/versions/3.7.4/lib/",
+    ],
+    "python.dataScience.askForKernelRestart": false,
+    "python.languageServer": "Microsoft",
+    "python.defaultInterpreterPath": "/home/timfayz/.pyenv/versions/3.7.4/bin/python",
+
+    // C/C++ 
+    "C_Cpp.formatting": "Disabled",
+
+    // Markdown
+    "markdown.preview.scrollPreviewWithEditor": true,
+    "markdown.preview.scrollEditorWithPreview": true,
+
+    // Java
+    "java.configuration.checkProjectSettingsExclusions": false,
+    "java.errors.incompleteClasspath.severity": "ignore",
+    "java.debug.settings.hotCodeReplace": "auto",
+    "java.home": "/usr/lib/jvm/default-java",
+    "[java]": {
+        "editor.defaultFormatter": "redhat.java"
+    },
+    
+    // LaTeX Workshop
+    "latex-workshop.message.update.show": false,
+    "latex-workshop.view.pdf.trim": 1,
+    "latex-workshop.latex.pdfWatch.delay": 100,
+    "latex-workshop.view.pdf.viewer": "tab",
+    "latex-workshop.latex.recipe.default": "lastUsed",
+    "latex-workshop.latex.autoBuild.run": "never",
 
     // cSpell
     "cSpell.language": "en",
-    "cSpell.dictionaryDefinitions": [
-        { "name": "globalDictionary", "path": "/home/timfayz/.config/Code/User/dictionary.txt", }
-    ],
-    "cSpell.dictionaries": ["globalDictionary"],
-    // "cSpell.languageSettings": [
-    //     { "languageId": "*", "dictionaries": ["latexDictionary"] }
-    // ],
-    // "cSpell.ignoreRegExpList": [
-    //     "\\\\cite{[A-Za-z0-9, -]+}",
-    //     "\\\\begin{\\w+}",
-    //     "\\\\end{\\w+}",
-    //     "\\\\usepackage{\\w+}",
-    //     "\\\\bibliographystyle{\\w+}",
-    //     "\\\\hyphenation{[A-Za-z0-9, -]+}",
-    //     "\\w+{?",
-    // ],
     "cSpell.userWords": [
         "Arithmetica",
         "Axiomatization",
@@ -304,79 +245,104 @@
         "understandability",
         "universalities",
         "vals",
-        "verificate"
+        "verificate",
+        "backticks",
+        "combinator",
+        "combinatorial",
+        "combinators",
+        "conlangs",
+        "criticise",
+        "grapheme",
+        "ideomatic",
+        "lexeme",
+        "logograms",
+        "logographic",
+        "modificators",
+        "multiline",
+        "passthrough",
+        "pictogram",
+        "pictograms",
+        "posteriori",
+        "roadmap",
+        "struct"
     ],
-    
-    // LaTeX Workshop
-    "latex-workshop.message.update.show": false,
-    "latex-workshop.view.pdf.trim": 1,
-    "latex-workshop.latex.pdfWatch.delay": 100,
-    "latex-workshop.view.pdf.viewer": "tab",
-    "latex-workshop.latex.recipe.default": "lastUsed",
-    "latex-workshop.latex.autoBuild.run": "never",
-    "latex-workshop.latex.recipes": [
-        {
-            "name": "my latexmk lua 🔃",
-            "tools": [
-                "latexmk"
-            ]
-        },
-    ],
-    "latex-workshop.latex.tools": [
-        {
-            "name": "latexmk",
-            "command": "latexmk",
-            "args": [
-                "-synctex=1",
-                "-interaction=nonstopmode",
-                "-file-line-error",
-                "-pdflua",
-                // "-outdir=%OUTDIR%",
-                "%DOC%.tex"
-            ],
-            "env": { // ADHOC !!!
-                "PATH": "/home/timfayz/.pyenv/plugins/pyenv-virtualenv/shims:/home/timfayz/.pyenv/shims:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/home/timfayz/.local/bin:/home/timfayz/Downloads/metamath:/home/timfayz/Downloads/ghidra_9.0.4:/usr/lib/jvm/default-java/bin:/usr/share/maven:/home/timfayz/.pyenv/bin:/usr/local/texlive/2019/bin/x86_64-linux"
-            }
-        },
-        {
-          "name": "bibtex",
-          "command": "bibtex",
-          "args": [
-            "%DOCFILE%"
-          ],
-          "env": {}
-        }
-    ],
-    
-    // Others
-    "debug.openExplorerOnEnd": true,
-    "debug.showBreakpointsInOverviewRuler": true,
-    "debug.focusWindowOnBreak": false,
-    "java.configuration.checkProjectSettingsExclusions": false,
-    "[java]": {
-        "editor.defaultFormatter": "redhat.java"
+
+    // Terminal 
+    "workbench.colorCustomizations": {
+        // "editorRuler.foreground": "#363636",
+        "terminal.background": "#181818",
+        "terminal.foreground": "#D8D8D8",
+        "terminalCursor.background": "#D8D8D8",
+        "terminalCursor.foreground": "#D8D8D8",
+        "terminal.ansiBlack": "#181818",
+        "terminal.ansiBlue": "#7CAFC2",
+        "terminal.ansiBrightBlack": "#585858",
+        "terminal.ansiBrightBlue": "#7CAFC2",
+        "terminal.ansiBrightCyan": "#86C1B9",
+        "terminal.ansiBrightGreen": "#A1B56C",
+        "terminal.ansiBrightMagenta": "#BA8BAF",
+        "terminal.ansiBrightRed": "#AB4642",
+        "terminal.ansiBrightWhite": "#F8F8F8",
+        "terminal.ansiBrightYellow": "#F7CA88",
+        "terminal.ansiCyan": "#86C1B9",
+        "terminal.ansiGreen": "#A1B56C",
+        "terminal.ansiMagenta": "#BA8BAF",
+        "terminal.ansiRed": "#AB4642",
+        "terminal.ansiWhite": "#D8D8D8",
+        "terminal.ansiYellow": "#F7CA88"
     },
-    "editor.codeLens": false,
-    "java.errors.incompleteClasspath.severity": "ignore",
-    "java.debug.settings.hotCodeReplace": "auto",
-    "workbench.list.openMode": "doubleClick",
-    "editor.fontSize": 19,
-    "editor.lineHeight": 0,
-    "pythonPreview.code.fontSize": "14",
-    "pythonPreview.fontSize": 15,
-    "python.dataScience.askForKernelRestart": false,
-    "editor.wordWrap": "on",
-    "editor.lineNumbers": "on",
-    "editor.folding": true,
-    "editor.glyphMargin": true,
-    "workbench.colorTheme": "Default Light+",
-    "terminal.integrated.fontSize": 14,
-    "workbench.editorAssociations": [
+    // https://github.com/Microsoft/vscode/issues/32579
+    "editor.tokenColorCustomizations": {
+        "textMateRules": [
+            {
+                // inspect TM scopes 
+                "scope": [
+                    "comment",
+                    "punctuation.definition.comment",
+                    "variable.language",
+                    "entity.other.attribute-name",
+                ],
+                "settings": {
+                    "fontStyle": ""
+                }
+            }
+        ]
+    },
+    
+    // Vim
+    // "vim.foldfix": true,
+    "vim.overrideCopy": true, // def false
+    "vim.useCtrlKeys": true,
+    "vim.hlsearch": true,
+    "vim.leader": "<space>",
+    "vim.handleKeys": {
+        "<C-a>": true,
+        "<C-b>": false,
+        "<C-f>": false,
+        // "<C-c>": false,
+        "<C-x>": false,
+    },
+    "vim.normalModeKeyBindingsNonRecursive": [
         {
-            "viewType": "default",
-            "filenamePattern": "*.pdf"
-        }
+        "before": ["<leader>", "a"],
+        "after": ["m", "l", "g", "g", "V", "G"]
+        },
+        {
+        "before": ["<leader>", "<leader>"],
+        "commands": [":w"]
+        },
+        {
+        "before": ["<C-l>"],
+        "commands": [":nohl"]
+        },
+        // {
+        // "before": ["j"],
+        // "after": ["g", "j"]
+        // },
+        // {
+        // "before": ["k"],
+        // "after": ["g", "k"]
+        // }
     ],
-    "python.languageServer": "Microsoft",
-    "python.defaultInterpreterPath": "/home/timfayz/.pyenv/versions/3.7.4/bin/python",
+
 }
